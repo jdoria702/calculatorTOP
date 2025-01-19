@@ -1,58 +1,76 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-    background-color: tomato;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background-color: tomato;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .calculator {
-    background-color: lightpink;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 300px;
-    border-radius: 40px;
-    padding: 40px 20px;
+  min-width: 300px;
+  max-width: 400px;
+  background-color: lightpink;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 300px;
+  border-radius: 40px;
+  padding: 40px 20px;
 }
 
 .display {
-    background-color: lightyellow;
-    display: flex;
-    justify-content: right;
-    padding: 6px 10px;
+  background-color: lightyellow;
+  display: flex;
+  justify-content: right;
+  padding: 6px 10px;
 }
 
 .buttons {
-    margin-top: 20px;
-    background-color: mistyrose;
-    display: flex;
-    flex-direction: column;
-    padding: 6px 20px;
-    border-radius: 20px;
+  margin-top: 20px;
+  background-color: mistyrose;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 20px;
+  border-radius: 20px;
 }
 
 .main-buttons {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .nums {
-    background-color: aquamarine;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: auto;
+  gap: 8px;
+}
+
+.nums > button {
+  width: 30%;
 }
 
 .ops {
-    background-color: mediumturquoise;
+  background-color: mediumturquoise;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  gap: 8px;
+  padding: 16px 4px;
 }
 
 .misc {
-    margin-top: 20px;
-    background-color: mediumpurple;
+  margin-top: 20px;
+  background-color: mediumpurple;
 }
