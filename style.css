@@ -71,6 +71,8 @@ body {
 }
 
 .misc {
-  margin-top: 20px;
+  display: flex;
+  margin-top: 8px;
   background-color: mediumpurple;
+  justify-content: space-around;
 }
